@@ -1,0 +1,128 @@
+.wrapper-md{
+  padding: 50px;
+}
+.wrapper-sm{
+  padding: 20px;
+}
+.padder-lr{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.m-t{
+  margin-top: 20px;
+}
+.m-r-s{
+  margin-right: 10px;
+}
+.m-l-s{
+  margin-left: 15px;
+}
+.w-s{
+  width: 35%;
+}
+.w-full{
+	width: 100%;
+	height: 150px;
+}
+.align-r{
+	float: right;
+}
+
+.bg-color{
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+    border: 2px solid lightgrey;
+    height: 200px;
+    padding: 5px;
+}
+.dropcss{
+	background-color: #fff;
+}
+.inputcss{	
+    border: none;
+    background-color: transparent;
+    max-width: 100%;
+}
+
+/****************/
+*{
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+[ng-drag]{
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+[ng-drag]{
+    /*width: 100px;
+    height: 100px;
+    color:white;
+    background: rgba(255,0,0, 0.5);
+    padding-top:40px;*/
+    text-align: center;
+    display: inline-block;
+    margin:0 10px;
+    cursor: move;
+}
+ul.draggable-objects:after{
+    display: block;
+    content:"";
+    clear:both;
+}
+.draggable-objects li{
+    float:left;
+    display: block;
+    width: 120px;
+    /*height:100px;*/
+}
+[ng-drag].drag-over{
+    border:solid 1px red;
+}
+[ng-drag].dragging{
+    opacity: 0.5;
+}
+[ng-drop]{
+    /*background: rgba(0,255,0, 0.5);
+    border: 2px solid lightgrey;
+    padding-top:15px;
+    margin:20px auto;
+    text-align: center;
+    width: 300px;
+    height: 100px;*/
+    display: inline-block;
+    position: relative;
+    height: 35px;
+    width: 125px;
+    top: 10px;
+}
+[ng-drop].drag-enter{
+    border:solid 5px red;
+}
+[ng-drop] span.title{
+    display: block;
+    position: absolute;
+    width: 550px;
+    height: 20px;
+    left:2%;
+    /*left:50%;
+    top:50%;
+    margin-left: -100px;
+    margin-top: -10px;*/
+}
+[ng-drop] div{
+    position: relative;
+    z-index: 2;
+}
+
+.imgcss{
+    height: 18px;
+    margin-right: 5px;
+    width: 15px;
+}
+#fullval input{
+    position: relative;
+    top: -5px;
+}
